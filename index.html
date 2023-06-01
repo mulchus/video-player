@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="./static/font-awesome/font-awesome.min.css">
   <meta charset="utf-8">
   <style type="text/css">
-
     .button {
       background: transparent;
       cursor: pointer;
@@ -14,27 +13,33 @@
     .i {
       color: white;
     }
-    .full-container {
+    .video-container {
       width: 100%;
       height: 100%;
+      flex: 1;
     }
-    .SVGA {
-      width: 800px;
-      height: 600px;
+    .entire-player {
+      width: 400px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
       box-shadow: 0 0 20px rgba(0,0,0,0.9)
     }
-    .background-black {
+    .control-line {
       background: black;
+      flex: 0;
     }
   </style>
 </head>
 <body>
-  <div id="player" class="SVGA">
-    <div class="full-container js-video-container"></div>
+  <div id="player" class="entire-player">
+    <div class="video-container js-video-container"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
-    <div class="background-black">
+    <div class="control-line">
       <button class="button js-play-button"><i class="i fa fa-play" aria-hidden="true"></i></button>
       <button class="button js-pause-button" hidden><i class="i fa fa-pause" aria-hidden="true"></i></button>
+      <button class="button js-mute-button"><i class="i fa fa-volume-off" aria-hidden="true"></i></button>
+      <button class="button js-volume-button" hidden><i class="i fa fa-volume-up" aria-hidden="true"></i></button>
     </div>
   </div>
 
