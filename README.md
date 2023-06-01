@@ -11,7 +11,10 @@
     });
 ```
 
-Плеер расположен по [адресу:](https://mulchus.github.io/video-player/)
+Плеер расположен по [адресу:](https://mulchus.github.io/video-player/)  
+Вид  
+![image](https://github.com/mulchus/video-player/assets/111083714/49434ef7-a6f7-420c-a4dd-b88afbe37fb3)
+
 
 ## Цели проекта
 Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
