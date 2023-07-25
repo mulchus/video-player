@@ -6,6 +6,22 @@
   <link rel="stylesheet" href="./static/font-awesome/font-awesome.min.css">
   <meta charset="utf-8">
   <style type="text/css">
+    .duration {
+      font-size: 16px;
+      color: white;
+      background: transparent;
+      text-align: center;
+      margin: 0px -5px 5px 0px;
+      border: 0px solid;
+     }
+    .current-time {
+      font-size: 16px;
+      color: white;
+      background: transparent;
+      text-align: center;
+      margin: 0px 0px 5px -8px;
+      border: 0px solid;
+     }
     .button {
       text-align: center;
       margin: 0px 2px 5px 0px;
@@ -15,7 +31,8 @@
       height: 35px;
       background: transparent;
       cursor: pointer;
-      border: 1px solid;
+      border: 0px solid;
+
     }
     .distance {
       flex: 1 0;
@@ -48,7 +65,9 @@
       <button class="button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
       <button class="button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
       <button class="button js-mute-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+      <button class="current-time js-current-time"><i class="fa fa-times" aria-hidden="false"></i></button>
       <div class="distance"></div>
+      <button class="duration js-duration"><i class="fa fa-times" aria-hidden="false"></i></button>
       <button class="button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
     </div>
   </div>
