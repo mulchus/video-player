@@ -9,6 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <style type="text/css">
+    .circle {
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border: 3.5px solid white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.9);
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 0 20px 0;
+    }
     .mg-0-550{
       margin: 0px -5px 5px 0px;
     }
@@ -72,6 +82,7 @@
       <button style="font-family: 'Roboto', sans-serif;" class="time mg-005-8 js-current-time"><i class="fa fa-times" aria-hidden="false"></i></button>
       <div class="progressbar ht-5 js-progress" style="background-color: grey;">
         <div class="ht-5 js-progress-slider" style="background-color: red;"></div>
+        <span class="circle"></span>
       </div>
       <button style="font-family: 'Roboto', sans-serif;" class="time mg-0-550 js-duration"><i class="fa fa-times" aria-hidden="false"></i></button>
       <button class="button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
