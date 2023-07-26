@@ -32,9 +32,13 @@
       background: transparent;
       cursor: pointer;
       border: 0px solid;
-
     }
-    .distance {
+    .ht-5{
+      height: 5px;
+    }
+    .progressbar {
+      border-radius: 3px;
+      margin: 0px 435px 5px 5px;
       flex: 1 0;
     }
     .video-container {
@@ -66,8 +70,8 @@
       <button class="button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
       <button class="button js-mute-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
       <button style="font-family: 'Roboto', sans-serif;" class="time mg-005-8 js-current-time"><i class="fa fa-times" aria-hidden="false"></i></button>
-      <div class="distance js-progress" style="background-color: grey;">
-        <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
+      <div class="progressbar ht-5 js-progress" style="background-color: grey;">
+        <div class="ht-5 js-progress-slider" style="background-color: red;"></div>
       </div>
       <button style="font-family: 'Roboto', sans-serif;" class="time mg-0-550 js-duration"><i class="fa fa-times" aria-hidden="false"></i></button>
       <button class="button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
