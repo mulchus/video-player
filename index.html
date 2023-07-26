@@ -9,7 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <style type="text/css">
+    .progressbar:hover .circle {
+      opacity: 1;
+      transition-property: opacity;
+      transition-duration: 300ms;
+    }
     .circle {
+      opacity: 0;
       height: 8px;
       width: 8px;
       background-color: red;
@@ -17,6 +23,8 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.9);
       border-radius: 50%;
       display: inline-block;
+      transition-property: opacity;
+      transition-duration: 300ms;
     }
     .mg-0-550{
       margin: 0px -5px 5px 0px;
