@@ -4,22 +4,22 @@
   <title>ВидеоПлеер</title>
   <link rel="icon" type="image/png" href="./static/favicon.ico">
   <link rel="stylesheet" href="./static/font-awesome/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <style type="text/css">
-    .duration {
-      font-size: 16px;
-      color: white;
-      background: transparent;
-      text-align: center;
+    .mg-0-550{
       margin: 0px -5px 5px 0px;
-      border: 0px solid;
-     }
-    .current-time {
-      font-size: 16px;
+    }
+    .mg-005-8{
+      margin: 0px 0px 5px -8px;
+    }
+    .time {
+      font-size: 16.5px;
       color: white;
       background: transparent;
       text-align: center;
-      margin: 0px 0px 5px -8px;
       border: 0px solid;
      }
     .button {
@@ -65,9 +65,9 @@
       <button class="button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
       <button class="button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
       <button class="button js-mute-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-      <button class="current-time js-current-time"><i class="fa fa-times" aria-hidden="false"></i></button>
+      <button style="font-family: 'Roboto', sans-serif;" class="time mg-005-8 js-current-time"><i class="fa fa-times" aria-hidden="false"></i></button>
       <div class="distance"></div>
-      <button class="duration js-duration"><i class="fa fa-times" aria-hidden="false"></i></button>
+      <button style="font-family: 'Roboto', sans-serif;" class="time mg-0-550 js-duration"><i class="fa fa-times" aria-hidden="false"></i></button>
       <button class="button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
     </div>
   </div>
