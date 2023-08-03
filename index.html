@@ -4,100 +4,30 @@
   <title>ВидеоПлеер</title>
   <link rel="icon" type="image/png" href="./static/favicon.ico">
   <link rel="stylesheet" href="./static/font-awesome/font-awesome.min.css">
+  <link rel="stylesheet" href="./static/video-player.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta charset="utf-8">
-  <style type="text/css">
-    .progressbar:hover .circle {
-      opacity: 1;
-      transition-property: opacity;
-      transition-duration: 300ms;
-    }
-    .circle {
-      opacity: 0;
-      height: 8px;
-      width: 8px;
-      background-color: red;
-      border: 3.5px solid white;
-      box-shadow: 0 0 20px rgba(0,0,0,0.9);
-      border-radius: 50%;
-      display: inline-block;
-      transition-property: opacity;
-      transition-duration: 300ms;
-    }
-    .mg-0-550{
-      margin: 0px -5px 5px 0px;
-    }
-    .mg-005-8{
-      margin: 0px 0px 5px -8px;
-    }
-    .time {
-      font-size: 16.5px;
-      color: white;
-      background: transparent;
-      text-align: center;
-      border: 0px solid;
-    }
-    .button:focus{
-      border: 0px solid;
-    }
-    .button {
-      text-align: center;
-      margin: 0px 2px 5px 0px;
-      color: white;
-      font-size: 20px;
-      width: 35px;
-      height: 35px;
-      background: transparent;
-      cursor: pointer;
-      border: 0px solid;
-    }
-    .ht-5{
-      height: 5px;
-    }
-    .progressbar {
-      border-radius: 3px;
-      margin: 0px 433px 5px 5px;
-      flex: 1 0;
-      display: flex;
-      align-items: center;
-    }
-    .video-container {
-      width: 100%;
-      height: 100%;
-    }
-    .entire-player {
-      width: 800px;
-      height: 600px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 0 20px rgba(0,0,0,0.9)
-    }
-    .control-line {
-      display: flex;
-      background: black;
-      align-items: center;
-    }
-  </style>
 </head>
 
 <body>
-  <div id="player" class="entire-player">
-    <div class="video-container js-video-container"></div>
-    <!-- Here can be placed player controls: play and volume buttons -->
-    <div class="control-line">
-      <button class="button js-play-button"><i class="fa fa-play" aria-hidden="true"></i></button>
-      <button class="button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
-      <button class="button js-volume-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-      <button class="button js-mute-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i></button>
-      <button style="font-family: 'Roboto', sans-serif;" class="time mg-005-8 js-current-time"><i class="fa fa-times" aria-hidden="false"></i></button>
-      <div class="progressbar ht-5 js-progress" style="background-color: grey;">
-        <div class="ht-5 js-progress-slider" style="background-color: red;"></div>
-        <span class="circle"></span>
+  <div id="player" class="entire-vp-player">
+    <div class="vp-container js-video-container"></div>
+    <div class="vp-control-line">
+      <button class="vp-button js-play-button"><i class="fa fa-play" aria-hidden="true"></i></button>
+      <button class="vp-button js-pause-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
+      <button class="vp-button js-mute-button" hidden><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+      <button class="vp-button js-volume-button"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
+      <div class="vp-progress-bar">
+        <div class="vp-time js-current-time"><i class="fa fa-times" aria-hidden="false"></i></div>
+        <div class="vp-progress-line js-progress">
+          <div class="vp-progress-slider js-progress-slider"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="vp-time js-duration"><i class="fa fa-times" aria-hidden="false"></i></div>
       </div>
-      <button style="font-family: 'Roboto', sans-serif;" class="time mg-0-550 js-duration"><i class="fa fa-times" aria-hidden="false"></i></button>
-      <button class="button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
+      <button class="vp-button js-fullscreen-button"><i class="fa fa-expand" aria-hidden="true"></i></button>
     </div>
   </div>
 
